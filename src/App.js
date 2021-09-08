@@ -2,12 +2,10 @@ import axios from "axios";
 import React, {useState, useEffect} from "react";
 import "./App.css";
 import { BASE_URL, API_KEY } from './constants';
-import Title from './Title';
 import Apod from './Apod';
-import Info from './Info';
 
 function App() {
-  const [ data, setData ] = useState([]);
+  const [ data, setData ] = useState(`${BASE_URL}/?api_key=${API_KEY}`);
 
   useEffect(() => {
     axios.get(`${BASE_URL}/?api_key=${API_KEY}`)
@@ -19,17 +17,13 @@ function App() {
     })
   }, [])
 
-  
-
   return (
     <div className="App">
       <div className="header">
         <div className="left"></div>
         <div className="right"></div>
       </div>
-      <Title title={data.title}/>
-      <Apod />
-      <Info />
+      <Apod data={data}/>
     </div>
   );
 }
