@@ -22,8 +22,13 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <div className="left"></div>
-        <div className="right"></div>
+        <div className="left">
+          <img src="./imgs/nasa.png" alt="NASA logo"></img>
+        </div>
+        <h1>NASA's Astronomy Picture of the Day</h1>
+        <div className="right">
+          <img src="./imgs/hubble.png" alt="Hubble Space Telescope"></img>
+        </div>
       </div>
       <Apod data={data}/>
     </div>

@@ -5,8 +5,8 @@ export default function Title(props) {
 
     return(
         <div className="titleBar">
-            <p className="title">{title}</p>
-            <p className="date">{date}</p>
+            <h3 className="title">{title}</h3>
+            <h4 className="date">{date}</h4>
         </div>
     )
 }
