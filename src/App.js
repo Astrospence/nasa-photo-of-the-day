@@ -5,7 +5,7 @@ import { BASE_URL, API_KEY } from './constants';
 import Apod from './Apod';
 
 function App() {
-  const [ data, setData ] = useState(`${BASE_URL}/?api_key=${API_KEY}`);
+  const [ data, setData ] = useState([]);
 
   useEffect(() => {
     axios.get(`${BASE_URL}/?api_key=${API_KEY}`)
@@ -16,6 +16,8 @@ function App() {
       console.error(err);
     })
   }, [])
+
+  console.log(data);
 
   return (
     <div className="App">
