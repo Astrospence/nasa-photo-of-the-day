@@ -1,12 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledDiv = styled.div`
+    h2 {
+        font-size: 1.7rem;
+    }
+`
 
 export default function Title(props) {
-    const { title, date } = props;
+    const { title } = props;
 
     return(
-        <div className="titleBar">
-            <h3 className="title">{title}</h3>
-            <h4 className="date">{date}</h4>
-        </div>
+        <StyledDiv className="titleBar">
+            <h2 className="title">{title}</h2>
+        </StyledDiv>
     )
 }
