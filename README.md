@@ -112,4 +112,3 @@ Follow these steps for completing your project.
 
 ## Part II - [Advanced Styling Techniques](DAY_TWO_README.md)
 
-apikey = 05foBOTevfdhjxl7DBYm8fXMsAsrNgzhzqEmwMAo
