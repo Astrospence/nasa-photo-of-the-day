@@ -16,9 +16,9 @@ const StyledDivA = styled.div`
 
 const NasaDiv = styled.div`
     width: 15%;
-    height: 18vh;
+    height: 20vh;
     background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 `
@@ -26,15 +26,16 @@ const NasaDiv = styled.div`
 const HubbleDiv = styled.div`
     background-size: cover;
     width: 15%;
-    height: 18vh;
+    height: 20vh;
     background-image: url('http://esahubble.org/media/archives/logos/screen/esa_hubble_bw_wb_gen.jpg');
-    background-size: contain;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 10px;
 `
         
 const StyledDivB = styled.div`
+    margin-top: -2%;
     h3 {
         text-align: center;
         padding-bottom: 10px;
