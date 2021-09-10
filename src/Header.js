@@ -10,14 +10,22 @@ const StyledDivA = styled.div`
     display: flex;
     justify-content: space-between;
 
-    div {
-        width: 15%;
-        height: 40vh;
-    }
-
     h1 {
         text-align: center;
     }
+`
+
+const NasaDiv = styled.div`
+    background-image: url(${nasa});
+    width: 15%;
+    height: 18vh;
+`
+
+const HubbleDiv = styled.div`
+    background-image: url(${hubble});
+    background-size: cover;
+    width: 15%;
+    height: 18vh;
 `
         
 const StyledDivB = styled.div`
@@ -34,13 +42,9 @@ export default function Header(props) {
     return (
         <StyledDivMain>
             <StyledDivA>
-                <div>
-                    <img src={nasa} alt="NASA logo"></img>
-                </div>
+                <NasaDiv></NasaDiv>
                 <h1>NASA's <br></br>Astronomy Picture of the Day</h1>
-                <div>
-                    <img src={hubble} alt="Hubble telescope icon"></img>
-                </div>
+                <HubbleDiv></HubbleDiv>
             </StyledDivA>
             <StyledDivB>
                 <h3>{date}</h3>
