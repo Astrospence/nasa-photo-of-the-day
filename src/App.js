@@ -20,11 +20,9 @@ function App() {
     })
   }, [])
 
-  console.log(data);
-
   return (
       <ThemeProvider theme={theme} >
-        <Header date={data.date}/>
+        <Header date={data.date} />
         <Apod data={data} />
       </ThemeProvider>
   );

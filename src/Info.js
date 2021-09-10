@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const StyledDiv = styled.div`
     font-size: 1.2rem;
+    margin-bottom: 10%;
 `
 
 export default function Info(props) {

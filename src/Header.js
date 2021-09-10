@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { nasa, hubble } from './constants.js';
 
 const StyledDivMain = styled.div`
-    box-shadow: 0 1px 5px gray;
+    box-shadow: 0 2px 10px 3px gray;
 `
 
 const StyledDivA = styled.div`
@@ -16,16 +15,23 @@ const StyledDivA = styled.div`
 `
 
 const NasaDiv = styled.div`
-    background-image: url(${nasa});
     width: 15%;
     height: 18vh;
+    background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 `
 
 const HubbleDiv = styled.div`
-    background-image: url(${hubble});
     background-size: cover;
     width: 15%;
     height: 18vh;
+    background-image: url('http://esahubble.org/media/archives/logos/screen/esa_hubble_bw_wb_gen.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
 `
         
 const StyledDivB = styled.div`
@@ -38,6 +44,8 @@ const StyledDivB = styled.div`
 export default function Header(props) {
 
     const { date } = props;
+
+    console.log(props);
 
     return (
         <StyledDivMain>

@@ -18,7 +18,7 @@ export default function Apod(props) {
     return(
         <StyledDiv>
             <Photo url={data.url}/>
-            <Title title={data.title} date={data.date}/>
+            <Title title={data.title}/>
             <Info explanation={data.explanation}/>
         </StyledDiv>
     )
